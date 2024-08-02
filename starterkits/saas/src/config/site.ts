@@ -11,5 +11,5 @@ export const siteConfig = {
     orgImage:
         "https://utfs.io/f/4ae0ddb1-4260-46f5-aa7c-70408cc192b9-aadavt.png",
     contactEmail: "hello@support.rapidlaunch.xyz",
-    noReplyEmail: "Rapidlaunch@support.rapidlaunch.xyz",
+    noReplyEmail: "onboarding@resend.dev",
 } as const;
