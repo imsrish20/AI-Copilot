@@ -1,4 +1,4 @@
 export const dashboardPageConfig = {
     title: "Dashboard",
-    description: "Manage your stats of your organization here!",
+    description: "Manage documents of your organization here!",
 } as const;

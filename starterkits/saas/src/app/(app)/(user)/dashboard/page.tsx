@@ -1,13 +1,9 @@
 import { AppPageShell } from "@/app/(app)/_components/page-shell";
 import { dashboardPageConfig } from "@/app/(app)/(user)/dashboard/_constants/page-config";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import {
-    ActivityIcon,
-    CreditCardIcon,
-    DollarSignIcon,
-    Users2Icon,
-} from "lucide-react";
-
+import ArticleOutlinedIcon from '@mui/icons-material/ArticleOutlined';
+import GridOnOutlinedIcon from '@mui/icons-material/GridOnOutlined';
+import CoPresentOutlinedIcon from '@mui/icons-material/CoPresentOutlined';
 export default function DashboardPage() {
     return (
         <AppPageShell
@@ -15,70 +11,65 @@ export default function DashboardPage() {
             description={dashboardPageConfig.description}
         >
             <div className="grid gap-6">
-                <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-4">
+                <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
                     <Card>
                         <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
                             <CardTitle className="text-sm font-medium">
-                                Total Revenue
+                                Create New
                             </CardTitle>
-                            <DollarSignIcon className="h-4 w-4 text-muted-foreground" />
+                            <ArticleOutlinedIcon/>
                         </CardHeader>
                         <CardContent>
-                            <div className="text-2xl font-bold">$45,231.89</div>
+                            <div className="text-2xl font-bold"> Document</div>
+                            
                             <p className="text-xs text-muted-foreground">
-                                +20.1% from last month
+                            with AI Copilot
                             </p>
                         </CardContent>
                     </Card>
                     <Card>
                         <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
                             <CardTitle className="text-sm font-medium">
-                                Subscriptions
+                                Create New
                             </CardTitle>
-                            <Users2Icon className="h-4 w-4 text-muted-foreground" />
+                            <GridOnOutlinedIcon/>
                         </CardHeader>
                         <CardContent>
-                            <div className="text-2xl font-bold">+3402</div>
+                            <div className="text-2xl font-bold">Sheet</div>
                             <p className="text-xs text-muted-foreground">
-                                +20.1% from last month
+                                with AI Copilot
                             </p>
                         </CardContent>
                     </Card>
                     <Card>
                         <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
                             <CardTitle className="text-sm font-medium">
-                                Active Now
+                                Create New
                             </CardTitle>
-                            <ActivityIcon className="h-4 w-4 text-muted-foreground" />
+                            <CoPresentOutlinedIcon />
                         </CardHeader>
                         <CardContent>
-                            <div className="text-2xl font-bold">+304</div>
+                            <div className="text-2xl font-bold">Presentation</div>
                             <p className="text-xs text-muted-foreground">
-                                +20.1% from last month
-                            </p>
-                        </CardContent>
-                    </Card>
-                    <Card>
-                        <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                            <CardTitle className="text-sm font-medium">
-                                Sales
-                            </CardTitle>
-                            <CreditCardIcon className="h-4 w-4 text-muted-foreground" />
-                        </CardHeader>
-                        <CardContent>
-                            <div className="text-2xl font-bold">+102304</div>
-                            <p className="text-xs text-muted-foreground">
-                                +20.1% from last month
+                            with AI Copilot
                             </p>
                         </CardContent>
                     </Card>
                 </div>
 
-                <div className="flex min-h-44 w-full items-center justify-center rounded-md border-2 border-dashed border-border p-4">
-                    <p className="text-sm text-muted-foreground">
-                        Your Content here, Above is a dummy data
-                    </p>
-                </div>
+                <div className="flex flex-col min-h-10 w-full items-center justify-center p-4">
+    <div className="flex w-full justify-between items-center bg-gray-100 p-2 rounded-t-md">
+        <div className="text-sm font-normal">
+            Recently Created
+        </div>
+    </div>
+    <div className="flex min-h-44 w-full items-center justify-center border-2 border-dashed border-border p-4 rounded-b-md">
+        <p className="text-xs text-muted-foreground">
+            Your Content here, Above is a dummy data
+        </p>
+    </div>
+</div>
+
             </div>
         </AppPageShell>
     );

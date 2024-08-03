@@ -31,16 +31,17 @@ export default async function HomePage() {
                     as="h1"
                     className="text-center font-heading text-3xl font-bold sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight"
                 >
-                    Rapidly launch your MVP with Beautiful Starterkits, Blocks,
-                    and more.
+                    Say goodbye to maual entries. Build and launch your
+                    documents,sheets and presentation faster with our Copilot.
+                    Start today!
                 </Balance>
                 <Balance
                     as="p"
                     className="text-center text-muted-foreground sm:text-xl"
                 >
-                    Elevate your development game with Rapidlaunch! Launch your
-                    apps faster with our SaaS starterkits, components, building
-                    guides, and more. Customizable. Open Source.
+                    Say goodbye to maual entries. Build and launch your
+                    documents,sheets and presentation faster with our Copilot.
+                    Start today!
                 </Balance>
                 <div className="flex items-center gap-4">
                     <Link
